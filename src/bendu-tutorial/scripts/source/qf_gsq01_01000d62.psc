@@ -17,6 +17,11 @@ ReferenceAlias Property Alias_Thief Auto
 ReferenceAlias Property Alias_Bendu Auto
 ;END ALIAS PROPERTY
 
+;BEGIN ALIAS PROPERTY Gilfre
+;ALIAS PROPERTY TYPE ReferenceAlias
+ReferenceAlias Property Alias_Gilfre Auto
+;END ALIAS PROPERTY
+
 ;BEGIN FRAGMENT Fragment_1
 Function Fragment_1()
 ;BEGIN CODE
