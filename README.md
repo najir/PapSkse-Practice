@@ -19,6 +19,13 @@ All relevant papyrus scripts and edited scripts are in the script folder, or can
     - Special topics, reset timers, combat, blocking topics
 - A complex scene involving other NPC's and specific AI packages
     
+## Teleport Spell
+A fairly basic script based spell
+- Fire and forget spell effect based off of existing spells
+- Papyrus script for teleport player based on their location
+- AngleZ, 100* sin(z), 100* cos(z) for location and angle parameters
+- Script initialization via run once game start quest script
+    - Adds spell to player character and displays a message for initialization, ends quest after
 
 
 
