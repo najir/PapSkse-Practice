@@ -27,6 +27,27 @@ A fairly basic script based spell
 - Script initialization via run once game start quest script
     - Adds spell to player character and displays a message for initialization, ends quest after
 
+## Level Design Tutorial 3/10
+Creationkit.com tutorial for developing 3d level spaces and new interactable cells. 
+- Duplicated and created a custom interior cell based on AAAMarkers
+- Custom dungeon using existing layout kits
+    - Basic transitions between kits
+- Spell implemented with cast script for teleporting to new cell
+- Set up initial quest script to add spell to player character
+
+## Dynamic Activating Script
+Following a creationkit script tutorial. Creates an aoe effect, when a target is focused with a spell and takes damage it sends a message to the debug console for the player to see
+- Quest and Alias setup for player references
+- Script via spell cloak
+    - Activates near the player based on various conditions
+    - Post messages and data to the debug console based on those conditions
+    - Provides info after player attacks
+- Script with spell activation on target, through our cloak spell
+    - Saves target information and updates it for console posting
+- Includes various state checks and conditions to fix bugs and optimize scripts
+- Global variable set in engine to disable/enable script through console commands
+
+
 
 
 # Build
