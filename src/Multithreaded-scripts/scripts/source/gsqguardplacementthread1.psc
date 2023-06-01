@@ -1,0 +1,1 @@
+Scriptname GSQGuardPlacementThread1 extends GSQGuardPlacementThread  

@@ -54,6 +54,11 @@ Using a creationkit.com tutorial on creating multi-threaded scripts to potential
     - Implements an Asnyc function for moving the actors, allowing for multithreading
     - Clears and deleteds created guards after duration of spell
     - based on futures(similar to promises it seems like)
+- Script details:
+    - Create a thread manager to handle the delegation of calls, unlocking of threads, and warnings of broken threads.
+    - Individual threads will process neccessary properties to let the manager know when it has completed it's task or if it is still under load, allowing the manager to keep track of the threads process.
+    - Data will be sent back to the manager and event load via a "Future" which is an object reference stored within an empty cell in the game world. This future will return empty until the thread has completed. Allowing the manager to send data back when completed or have the event wait for completion.
+        - This acts like promises, continuing calls and other scripts once a future has returned data but allowing other processes to run in parallel unless it requires information from that promise.
 
 
 
