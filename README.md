@@ -47,6 +47,14 @@ Following a creationkit script tutorial. Creates an aoe effect, when a target is
 - Includes various state checks and conditions to fix bugs and optimize scripts
 - Global variable set in engine to disable/enable script through console commands
 
+## MultiThreaded script
+Using a creationkit.com tutorial on creating multi-threaded scripts to potentially improve performance and speed of scripts.
+- Creating a spell that spawns a small army of guards at the players location
+    - This spell is a script based activation
+    - Implements an Asnyc function for moving the actors, allowing for multithreading
+    - Clears and deleteds created guards after duration of spell
+    - based on futures(similar to promises it seems like)
+
 
 
 
