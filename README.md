@@ -33,7 +33,6 @@ Creationkit.com tutorial for developing 3d level spaces and new interactable cel
 - Custom dungeon using existing layout kits
     - Basic transitions between kits
 - Spell implemented with cast script for teleporting to new cell
-- Set up initial quest script to add spell to player character
 
 ## Dynamic Activating Script
 Following a creationkit script tutorial. Creates an aoe effect, when a target is focused with a spell and takes damage it sends a message to the debug console for the player to see
@@ -60,6 +59,15 @@ Using a creationkit.com tutorial on creating multi-threaded scripts to potential
     - Data will be sent back to the manager and event load via a "Future" which is an object reference stored within an empty cell in the game world. This future will return empty until the thread has completed. Allowing the manager to send data back when completed or have the event wait for completion.
         - This acts like promises, continuing calls and other scripts once a future has returned data but allowing other processes to run in parallel unless it requires information from that promise.
 
+## Lingering Spirit 80% complete
+Based off of an example script for resurection, instead spawns ghost of killed enemy after specified time based on chance and once.
+- Quest activated cloak spell to attack script to nearby NPC's in cell
+- Cloak script adds spell, effect, and script to npc's
+- Checks for NPC dead and a random 3% chance to activate spell effect
+    - If activated, spell turns the NPC into a ghost via ghostdefaultscript
+    - plays animation and resurrects enemy on location
+    - waits 32 in-game hours before resurrecting the npc
+- Originally wrote entirely in cloak script, but found conditions of effect activation easier.
 
 
 
